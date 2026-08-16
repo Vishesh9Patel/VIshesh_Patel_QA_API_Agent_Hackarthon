@@ -3,7 +3,7 @@ import path from "node:path"
 import { put, head } from "@vercel/blob"
 
 const isVercel = Boolean(process.env.VERCEL)
-const hasBlobStorage = Boolean(process.env.BLOB_READ_WRITE_TOKEN)
+function hasBlobStorage() {return Boolean(process.env.BLOB_READ_WRITE_TOKEN)}
 
 function safe(value) {
   return String(value ?? "")
