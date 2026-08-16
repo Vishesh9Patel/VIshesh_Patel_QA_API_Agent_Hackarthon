@@ -7,7 +7,7 @@ dist
 .vercel
 
 # Local runtime QA reports
-reports/
+
 
 .vercel
 .env*
